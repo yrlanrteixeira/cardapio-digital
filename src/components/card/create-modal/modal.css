@@ -1,7 +1,7 @@
 .modal-overlay {
     position: fixed;
     inset: 0;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.61);
     overflow: hidden;
     height: 100vh;
     width: 100vw;
@@ -14,10 +14,10 @@
 }
 
 .modal-overlay .modal-body {
-    background-color: white;
+    background-color: #e61313ea;;
     padding: 24px;
-    height: 60%;
-    width: 60%;
+    max-height: 80%; 
+    max-width: 80%;
     border-radius: 24px;
 
     display: flex;
@@ -29,29 +29,28 @@
 .modal-overlay .modal-body h2 {
     font-size: 32px;
     margin: 0 auto 24px;
-    color: black;
+    color: white;
     text-align: center;
 }
 
-
 .modal-overlay .modal-body .input-container {
-    width: calc(100% - 24px);
+    width: 100%;
 }
 
 .modal-overlay .modal-body input {
     padding: 12px;
-    border: 2px solid white;
-    color: white;
+    border: none;
+    color: var(--text-dark); /* Altere a cor do texto para a cor desejada */
     font-size: 18px;
     line-height: 24px;
     border-radius: 12px;
     width: 100%;
-
+    box-sizing: border-box; /* Adicione esta propriedade */
     margin-bottom: 12px;
 }
 
 .modal-overlay .modal-body label {
-    color: rgba(0,0,0,0.9);
+    color: rgba(0, 0, 0, 0.9);
     font-weight: 600;
     margin-bottom: 8px;
     font-size: 18px;
@@ -64,6 +63,6 @@
 }
 
 .modal-overlay .modal-body .btn-secondary:hover {
-    background-color: #3a44f8;
+    background-color: #22e933;
     transform: scale(1);
 }
